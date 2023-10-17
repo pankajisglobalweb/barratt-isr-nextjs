@@ -1,0 +1,123 @@
+$color_1: #1D1D1D;
+$color_2: #000;
+$font-family_1: 'Noto';
+$background-color_1: #EDEDED;
+$background-color_2: #C72A17;
+
+.title_box {
+	padding-top: .2rem;
+	margin-bottom: .4rem;
+	position: relative;
+	div{
+	>.title_row {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		>.title {
+			width: 70%;
+			font-size: .344rem;
+			font-family: $font-family_1;
+			color: $color_1;
+			letter-spacing: 1px;
+			line-height: 1.4;
+			margin-bottom: 0;
+		}
+		>.title_btn {
+			display: flex;
+			background-color: $background-color_1;
+			padding: 0;
+			border: none;
+			>.btn_img {
+				padding: 0 .08rem;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				background-color: $background-color_2;
+				>img {
+					height: 65%;
+				}
+			}
+			>.text_box {
+				display: flex;
+				align-items: center;
+				>span {
+					padding: .128rem .144rem;
+					font-size: .112rem;
+					color: $color_2;
+					font-family: $font-family_1;
+					letter-spacing: .02rem;
+				}
+			}
+		}
+	}
+	>.line {
+		width: .8rem;
+		height: .032rem;
+		background-color: $background-color_2;
+		margin-top: .12rem;
+		>.swiper-scrollbar-drag {
+			height: .032rem;
+			background-color: $background-color_2;
+			border-radius: 0;
+		}
+	}
+}
+}
+
+
+@media screen and (max-width:767px){
+	.title_box {
+		margin-bottom: 1.2077rem;
+		div{
+		>.title_row {
+			>.title {
+				font-size: .7246rem;
+				width: 100%;
+			}
+			>.title_btn {
+				display: none;
+			}
+		}
+		>.line {
+			width: 2.4155rem;
+			height: .1449rem;
+			margin-top: .3865rem;
+		}
+	}
+	}
+	.title_box {
+		div{ 
+		>.title_btn_box {
+			display: inline-block;
+			margin-top: 1.4493rem;
+			>.title_btn {
+				display: flex;
+				background-color: $background-color_1;
+				padding: 0;
+				border: none;
+				>.btn_img {
+					padding: 0 .2415rem;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					background-color: $background-color_2;
+					>img {
+						height: 65%;
+					}
+				}
+				>.text_box {
+					display: flex;
+					align-items: center;
+					>span {
+						padding: .4106rem .4348rem;
+						font-size: .3382rem;
+						color: $color_1;
+						font-family: $font-family_1;
+						letter-spacing: .0604rem;
+						}
+					}
+				}
+			}
+		}
+	}	
+}

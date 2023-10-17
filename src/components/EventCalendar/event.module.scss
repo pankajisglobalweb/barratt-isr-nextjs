@@ -1,0 +1,166 @@
+$color_1: #000;
+$color_2: #fff;
+$font-family_1: 'Noto';
+$background-color_1: #EBF0F3;
+$background-color_2: #fff;
+$background-color_3: #C72A17;
+
+.top_bg {
+	position: relative;
+	>.topBg {
+		width: 7.424rem;
+		height: 4.056rem;
+		object-fit: cover;
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	>div {
+		height: 4.056rem;
+		margin-bottom: 2rem;
+		position: relative;
+		>.header_box {
+			width: 6.52rem;
+			position: absolute;
+			bottom: 0;
+			z-index: 1;
+			transform: translateY(50%);
+			padding: .4rem;
+			background-color: $background-color_1;
+			>.pageTitle {
+				font-size: .4rem;
+				font-family: $font-family_1;
+				color: $color_1;
+			}
+			>.title_info {
+				font-size: .144rem;
+				color: $color_1;
+				line-height: 1.5;
+				margin: 0;
+			}
+			>.search_box {
+				width: 100%;
+				padding-left: .16rem;
+				display: flex;
+				background-color: $background-color_2;
+				margin-top: .56rem;
+				>.input_box {
+					padding: .136rem 0;
+					width: .8rem;
+					flex: 1;
+					display: flex;
+					>input {
+						width: .8rem;
+						flex: 1;
+						border: none;
+						outline: none;
+						font-size: .125rem;
+						padding-right: .16rem;
+					}
+					>input.search_val {
+						border-right: solid 1px #A0A0A0;
+						padding-left: .28rem;
+						background: url(../../../public/images/search_icon_2.png) no-repeat;
+						background-position: left center;
+						background-size: .152rem auto;
+						background-color: #fff;
+					}
+					>input.dateInput {
+						margin-left: .16rem;
+						padding-left: .264rem;
+						background-image: url('../../../public/images/event_icon.png');
+						background-repeat: no-repeat;
+						background-position: left center;
+						background-size: .208rem auto;
+						background-color: #fff;
+            &::-webkit-calendar-picker-indicator {
+              background: transparent;
+              bottom: 0;
+              color: transparent;
+              cursor: pointer;
+              height: auto;
+              left: 0;
+              position: absolute;
+              right: 0;
+              top: 0;
+              width: auto;
+          }
+					}
+				}
+				>button {
+					width: 1.24rem;
+					padding: .136rem 0;
+					font-size: .0972222rem;
+					text-align: center;
+					color: $color_2;
+					border: none;
+					letter-spacing: 2.5px;
+					background-color: $background-color_3;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width:767px){
+  .top_bg {
+    >.topBg {
+      display: none;
+    }
+    >div {
+      padding: 0;
+      height: auto;
+      margin-bottom: 1.2077rem;
+      >.header_box {
+        position: static;
+        width: 100%;
+        transform: none;
+        padding: .8454rem .4831rem 1.2077rem;
+        >.pageTitle {
+          font-size: .8454rem;
+        }
+        >.title_info {
+          font-size: .3865rem;
+        }
+        >.search_box {
+          flex-wrap: wrap;
+          padding: 0;
+          background-color: $background-color_1;
+          margin-top: .7246rem;
+          >.input_box {
+            width: 100%;
+            flex: none;
+            flex-wrap: wrap;
+            padding: 0 .2415rem;
+            background-color: $background-color_2;
+            >input {
+              width: 100%;
+              flex: none;
+              font-size: .4106rem;
+              padding: .4348rem;
+              padding-left: 1.3527rem !important;
+            }
+            >input.search_val {
+              border-right: none;
+              border-bottom: solid 1px #C0C0C0;
+              background-position: .4106rem center;
+              background-size: .5797rem auto;
+            }
+            >input.dateInput {
+              margin: 0;
+              background-position: .4106rem center;
+              background-size: .6522rem auto;
+            }
+          }
+          >button {
+            width: 100%;
+            padding: .4348rem 0;
+            font-size: .3382rem;
+            margin-top: .4106rem;
+          }
+        }
+      }
+    }
+  }
+}
+  

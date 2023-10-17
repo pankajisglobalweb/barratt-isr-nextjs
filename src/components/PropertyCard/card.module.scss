@@ -1,0 +1,391 @@
+$color_1: #000;
+$color_2: #C72A17;
+$font-family_1: 'Noto';
+$background-color_1: #F8F8F8;
+$background-color_2: #fff;
+
+.list {
+	margin-top: .8rem;
+	background-color: $background-color_1;
+	>div {
+		>h3 {
+			font-size: .24rem;
+			font-family: $font-family_1;
+			color: $color_1;
+			margin-bottom: .176rem;
+		}
+		>ul {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			margin-bottom: 0;
+			>li {
+				width: 48%;
+				margin: .208rem 0;
+				overflow: hidden;
+				>a {
+					display: block;
+					width: 100%;
+					height: 100%;
+					 >.mainImg_box {
+						height: 2.8rem;
+						position: relative;
+						>img {
+							width: 100%;
+							height: 100%;
+							object-fit: cover;
+						}
+						>.timeMsg_box {
+							width: 2.76rem;
+							height: 1.248rem;
+							padding: 0 .248rem;
+							padding-top: .04rem;
+							box-sizing: border-box;
+							position: absolute;
+							left: 0;
+							bottom: 0;
+                            &.s_bg{
+                                background-color: #EBF2F0;
+                            }
+							>.day_box {
+								display: flex;
+								align-items: baseline;
+                                &.fc{
+                                    color:#9bc7bb;
+                                }
+								>.day {
+									display: flex;
+									align-items: center;
+									>span {
+										font-size: .2rem;
+										margin: 0 .064rem;
+									}
+									>.day_val {
+										font-size: .4rem;
+										font-family: $font-family_1;
+										margin: 0;
+									}
+								}
+								>.month {
+									font-size: .24rem;
+									font-family: $font-family_1;
+									margin-left: .12rem;
+								}
+							}
+							>p {
+								font-size: .144rem;
+								font-family: $font-family_1;
+								color: $color_1;
+								margin: 0;
+								line-height: 1.8;
+								overflow: hidden;
+								white-space: nowrap;
+								text-overflow: ellipsis;
+							}
+						}
+					}
+					>.info_box {
+						height: 1.6rem;
+						padding: .16rem .232rem;
+						background-color: $background-color_2;
+						font-size: 0;
+						color: $color_1;
+						>.info_title {
+							font-size: .192rem;
+							font-family: $font-family_1;
+							margin: 0;
+							margin-bottom: .144rem;
+							line-height: 1.5;
+							overflow: hidden;
+							text-overflow: ellipsis;
+							display: -webkit-box;
+							-webkit-box-orient: vertical;
+							-webkit-line-clamp: 2;
+						}
+						>.info_val {
+							font-size: .144rem;
+							margin: 0;
+							overflow: hidden;
+							text-overflow: ellipsis;
+							display: -webkit-box;
+							-webkit-box-orient: vertical;
+							-webkit-line-clamp: 3;
+						}
+					}
+				}
+			}
+		}
+		>button {
+			font-size: .112rem;
+			font-family: $font-family_1;
+			letter-spacing: 2.5px;
+			color: $color_2;
+			padding: .104rem .4rem;
+			border: solid 1px #C72A17;
+			background-color: $background-color_1;
+			margin: .416rem 0 .64rem;
+			position: relative;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
+}
+
+@media screen and (max-width:767px) {
+    
+.list {
+	margin-top: 0;
+	>div {
+		>h3 {
+			font-size: .7246377rem;
+			margin-bottom: .9662rem;
+		}
+		>ul {
+			flex-wrap: wrap;
+			>li {
+				width: 100%;
+				margin-top: 0;
+				margin-bottom: .7246rem;
+				>a {
+					>.mainImg_box {
+						height: 6.3768rem;
+						>.timeMsg_box {
+							width: 6.2802rem;
+							height: 2.8502rem;
+							padding: 0 .5556rem;
+							padding-top: 0;
+							>.day_box {
+								>.day {
+									>span {
+										margin: 0 .2415rem;
+									}
+									>.day_val {
+										font-size: .9662rem;
+									}
+								}
+								>.month {
+									font-size: .628rem;
+									margin-left: .3865rem;
+								}
+							}
+							>p {
+								font-size: .3382rem;
+							}
+						}
+					}
+					>.info_box {
+						padding: .3382rem .4831rem .4831rem;
+						height: auto;
+						>.info_title {
+							font-size: .4348rem;
+							margin-bottom: .3865rem;
+						}
+						>.info_val {
+							font-size: .3865rem;
+						}
+					}
+				}
+			}
+		}
+		>button {
+			padding: .3623rem 1.2077rem;
+			margin: .4831rem 0 1.9324rem;
+			font-size: .3382rem;
+			letter-spacing: 3px;
+		}
+	}
+}
+
+
+}
+
+
+@media only screen and (max-width: 767px) {
+	.list {
+		>div {
+			>ul {
+				>li {
+					>a { 
+						>.mainImg_box { 
+							>.timeMsg_box {
+								width: 100%;
+								
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+  }
+
+
+
+
+
+
+  $color_1: #000;
+$color_2: #fff;
+$font-family_1: 'Noto';
+$background-color_1: #EBF0F3;
+$background-color_2: #fff;
+$background-color_3: #C72A17;
+
+.top_bg {
+	position: relative;
+	>.topBg {
+		width: 7.424rem;
+		height: 4.056rem;
+		object-fit: cover;
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	>div {
+		height: 4.056rem;
+		margin-bottom: 2rem;
+		position: relative;
+		>.header_box {
+			width: 6.52rem;
+			position: absolute;
+			bottom: 0;
+			z-index: 1;
+			transform: translateY(50%);
+			padding: .4rem;
+			background-color: $background-color_1;
+			>.pageTitle {
+				font-size: .4rem;
+				font-family: $font-family_1;
+				color: $color_1;
+			}
+			>.title_info {
+				font-size: .144rem;
+				color: $color_1;
+				line-height: 1.5;
+				margin: 0;
+			}
+			>.search_box {
+				width: 100%;
+				padding-left: .16rem;
+				display: flex;
+				background-color: $background-color_2;
+				margin-top: .56rem;
+				>.input_box {
+					padding: .136rem 0;
+					width: .8rem;
+					flex: 1;
+					display: flex;
+					>input {
+						width: .8rem;
+						flex: 1;
+						border: none;
+						outline: none;
+						font-size: .125rem;
+						padding-right: .16rem;
+					}
+					>input.search_val {
+						border-right: solid 1px #A0A0A0;
+						padding-left: .28rem;
+						background: url(../../../public/images/search_icon_2.png) no-repeat;
+						background-position: left center;
+						background-size: .152rem auto;
+						background-color: #fff;
+					}
+					>input.dateInput {
+						margin-left: .16rem;
+						padding-left: .264rem;
+						background-image: url('../../../public/images/event_icon.png');
+						background-repeat: no-repeat;
+						background-position: left center;
+						background-size: .208rem auto;
+            &::-webkit-calendar-picker-indicator {
+              background: transparent;
+              bottom: 0;
+              color: transparent;
+              cursor: pointer;
+              height: auto;
+              left: 0;
+              position: absolute;
+              right: 0;
+              top: 0;
+              width: auto;
+          }
+					}
+				}
+				>button {
+					width: 1.24rem;
+					padding: .136rem 0;
+					font-size: .0972222rem;
+					text-align: center;
+					color: $color_2;
+					border: none;
+					letter-spacing: 2.5px;
+					background-color: $background-color_3;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width:767px){
+  .top_bg {
+    >.topBg {
+      display: none;
+    }
+    >div {
+      padding: 0;
+      height: auto;
+      margin-bottom: 1.2077rem;
+      >.header_box {
+        position: static;
+        width: 100%;
+        transform: none;
+        padding: .8454rem .4831rem 1.2077rem;
+        >.pageTitle {
+          font-size: .8454rem;
+        }
+        >.title_info {
+          font-size: .3865rem;
+        }
+        >.search_box {
+          flex-wrap: wrap;
+          padding: 0;
+          background-color: $background-color_1;
+          margin-top: .7246rem;
+          >.input_box {
+            width: 100%;
+            flex: none;
+            flex-wrap: wrap;
+            padding: 0 .2415rem;
+            background-color: $background-color_2;
+            >input {
+              width: 100%;
+              flex: none;
+              font-size: .4106rem;
+              padding: .4348rem;
+              padding-left: 1.3527rem !important;
+            }
+            >input.search_val {
+              border-right: none;
+              border-bottom: solid 1px #C0C0C0;
+              background-position: .4106rem center;
+              background-size: .5797rem auto;
+            }
+            >input.dateInput {
+              margin: 0;
+              background-position: .4106rem center;
+              background-size: .6522rem auto;
+            }
+          }
+          >button {
+            width: 100%;
+            padding: .4348rem 0;
+            font-size: .3382rem;
+            margin-top: .4106rem;
+          }
+        }
+      }
+    }
+  }
+}
+  

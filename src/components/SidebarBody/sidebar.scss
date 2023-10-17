@@ -1,0 +1,28 @@
+.Areabody {
+    .form-label {
+        font-size: 15px;
+        color: #000;
+        font-family: 'Noto';
+    }
+
+    .form-control,.form-select {
+        border: solid 1px #666;
+        outline: none;
+        border-radius: 0px;
+    }
+
+    .decText {
+        font-size: 11px;
+    }
+
+    .form-check .form-check-input {
+        border-radius: 1px !important;
+        border: solid 1px #9C9C9C;
+        outline: none;
+    }
+
+    .form-check-input:checked {
+        background-color: #C72A17;
+        border-color: #C72A17;
+    }
+}

@@ -1,0 +1,36 @@
+.cardSection {
+    h1 {
+        font-family: 'Noto';
+        font-size: 30px;
+    }
+    .card-title h1{
+        font-family: 'Noto';
+        font-size: 18px;
+    }
+
+    .timeZon {
+        background-color: #EBF0F3;
+        height: 124px;
+        width: 276px;
+        box-sizing: border-box;
+
+        .day_box {
+            display: flex;
+            align-items: baseline;
+            span{
+                font-family: 'Noto';
+                font-size: 40px;
+                color: #9bc7bb;
+            }
+            .lastDate{
+                font-size: 20px;
+            }
+        }
+        .bottomtime{
+            font-size: 15px;
+            font-weight: 600;
+            font-family: 'Noto';
+            color: #000;
+        }
+    }
+}

@@ -1,0 +1,18 @@
+.DetailsMain{
+    .top-80{
+        top: 100px;
+    }
+    .card-header{
+        size: 22px;
+        font-weight: 700;
+        font-family: 'Noto';
+    }
+    .custom-list-item {
+        list-style: none;
+        padding-left: 30px; /* Adjust the padding as needed */
+        background-image: url('https://www.barrattlondonmena.com/img/icon_ok.png');
+        background-repeat: no-repeat;
+        background-position: 0 50%;
+      }
+}
+

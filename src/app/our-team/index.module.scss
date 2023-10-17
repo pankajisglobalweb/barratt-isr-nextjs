@@ -1,0 +1,27 @@
+.teamSec{
+    position: relative;
+    padding-bottom: .68px;
+    background-color: #f8f8f8;
+
+    .team_box {
+        padding: .48rem 0 .56rem;
+        &.china_team {
+            background-color: #EBF0F3;
+        }
+        div{
+        .team_list {
+            display: flex;
+            flex-wrap: wrap;
+            }
+        }   
+    }
+}
+
+@media screen and (max-width: 767px){
+    .teamSec{
+        .team_box{
+            padding: 1.4493rem 0 1.4493rem;
+          }
+    }
+}
+

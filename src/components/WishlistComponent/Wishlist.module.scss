@@ -1,0 +1,17 @@
+.heart_box {
+    right: 0;
+    bottom: 0;
+    width: .448rem;
+    height: .448rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &.bg {
+        background-color: #9bc7bb;
+    }
+    button {
+        background-color: #9bc7bb;
+        border: none;
+    }
+}

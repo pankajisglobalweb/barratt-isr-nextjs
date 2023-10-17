@@ -1,0 +1,63 @@
+.locationCardBox{
+    position: relative;
+    width: 3.12rem;
+    margin-right: 0.3623rem; 
+    a{
+        display: block;
+        position: relative;
+        padding-bottom: .28rem;
+        height: 3.04rem;
+        img{
+            object-fit: cover;
+        }
+        .info_box {
+            width: 2.408rem;
+            padding: .144rem .2rem;
+            box-sizing: border-box;
+            background-color: #EBF0F3;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            .location_title {
+                font-size: .192rem;                
+                font-family: 'Noto';
+                color: #000;
+                line-height: 1.5;
+                margin: 0;
+            }
+            .location_info {
+                display: inline-block;
+                font-size: .112rem;
+                color: #000;
+                margin: 0;
+                padding-right: .2rem;                
+                background: url(../../../public/images/goTo_black.png) no-repeat;
+                background-size: .176rem auto;
+                background-position: right center;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .locationCardBox{
+        width:6.12rem;
+        a{
+            padding-bottom: .7246rem;
+            height: 6.7295rem;
+            .info_box {
+                width: 5.314rem;
+                padding: .2899rem .2415rem;
+                .location_title{
+                    font-size: .4348rem;
+                  }
+                .location_info{
+                    font-size: .2899rem;
+                    margin-top: .2415rem;
+                    padding-right: .7246rem;
+                    background-size: .5072rem auto;
+                }
+            }
+        }
+    }
+}

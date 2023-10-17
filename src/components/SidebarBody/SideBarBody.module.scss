@@ -1,0 +1,177 @@
+.form_box{
+    width: 100%;
+    padding: 0;
+    form{
+        width: 100%;
+        margin-top: .2083333rem;
+        margin-bottom: .2083333rem;
+        div{
+            position: relative;
+            padding-bottom: 0.09rem;
+            label{
+                font-size: .144rem;
+                font-family: 'Noto';
+                color: #000;
+                margin-bottom: .05rem;
+                img{
+                    margin-left: .12rem;
+                }
+              }
+            input{
+                width: 100%;
+                border: solid 1px #666;
+                outline: none;
+                padding: .1041667rem;
+                font-size: .125rem;
+                color: #333;
+                margin-bottom: .05rem;
+                border-radius: 0px;
+                &:focus{
+                    box-shadow: none;
+                }
+            }
+            &.phone{
+                input{
+                    margin-bottom: 0;
+                  }
+            }
+            textarea{
+                width: 100%;
+                border: solid 1px #666;
+                outline: none;
+                padding: .1041667rem;
+                font-size: .125rem;
+                color: #333;
+                border-radius: 0;
+                margin-bottom: .14833rem;
+                &:focus{
+                    box-shadow: none;
+                }
+              }
+              select{
+                width: 100%;
+                border: solid 1px #666;
+                outline: none;
+                padding: .1041667rem;
+                font-size: .125rem;
+                color: #333;
+                border-radius: 0;
+                margin-bottom: .14833rem;
+                background-position:  right 0.1rem center;
+                &:focus{
+                    box-shadow: none;
+                }
+              }
+              .error{
+                display: block;
+                // position: absolute;
+                bottom: 0.0625rem;
+                font-size: .094rem;
+                color: #EF4A3C;
+                padding-left: 0.1388889rem;
+              }
+          }
+            button {
+                border: none;
+                padding: 0.072rem 0.16rem;
+                background-color: #C72A17;
+                display: flex;
+                align-items: center;
+                margin-bottom: 0.2rem;
+                border-radius: 0px;
+                margin-top: 0.2rem;
+                span {
+                    font-size: .112rem;
+                    font-family: 'Noto';
+                    letter-spacing: 2.5px;
+                    color: #fff;
+                }
+                &:hover{
+                    background-color: #C72A17;
+                }
+            }
+            .down_select{
+                display: flex;
+                flex-direction: column;
+                margin-top: 0.2088rem;
+                div{
+                    display: flex;
+                    margin-right: .16rem;
+                    min-height: .24rem;
+                    padding-left: 0;
+                    align-items: center;
+                    input{
+                        width:0.16rem;
+                        height: 0.16px;
+                        border-radius: 0px;
+                        margin-left: 0;
+                        margin-bottom: 0;
+                        &:checked{
+                            background-color: #C72A17;
+                            border-color: #C72A17;
+                        }
+                    }
+                    label{
+                        margin-left: 0.1rem;
+                        margin-bottom: 0;
+                    }
+                }
+            }
+      }
+      p{
+        font-size: .112rem;
+        color: #000;
+        margin-bottom: 0;
+        a{
+            color: #007bff;
+        }
+        &.red{
+            color:#C72A17;
+            margin-bottom: .15rem;
+        }
+      }
+}
+
+@media screen and (max-width:767px) {
+    .form_box{
+        form{
+            margin-top: .7246rem;
+            margin-bottom: 0;
+            div{
+                label{
+                    margin-bottom: .2415rem;
+                    font-size: .4348rem;
+                }
+                input{
+                    padding: .4831rem;
+                    font-size: .3865rem;
+                    margin-bottom: 0;
+                }
+                textarea{
+                    height: 4.1063rem;
+                    margin-bottom: .7246rem;
+                    padding: .4831rem;
+                    font-size: .3865rem;
+                  }
+                  .error{
+                        font-size: .3865rem;                         
+                  }
+                  button{
+                    padding: .2174rem .4831rem;
+                    margin-bottom: .6039rem;
+                    span{
+                        font-size: .3382rem;
+                    }
+                    img{
+                        width: .8696rem;
+                        margin-left: .3623rem;
+                    }
+                }
+            }
+          }
+          p{
+            font-size: .3623rem;
+          }
+          
+    }
+}

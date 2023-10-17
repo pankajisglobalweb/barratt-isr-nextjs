@@ -1,0 +1,51 @@
+.sliderBtnBox{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    button{
+        width: 56px;
+        height: 56px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        background-color: #C72A17;
+        border:0px;
+        img.redbtn{
+            display:none;
+        }
+        img.whitebtn{
+            display: block;
+        }
+        &.active{
+            background-color: #EDEDED;
+            img.redbtn{
+                display:block;
+            }
+            img.whitebtn{
+                display: none;
+            }
+        }
+    }
+}
+@media screen and (max-width: 767px) {
+    .sliderBtnBox{display: none;}
+    .fcon{
+        padding-right: 0;
+        max-width: 100%;
+        .frow{
+            [class*="col-"]{
+                width: 100%;
+                padding-left: 40px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .sliderBtnBox{display: none;}
+}

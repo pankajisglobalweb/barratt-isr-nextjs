@@ -1,0 +1,169 @@
+.saleCard{
+   width: 3.32rem;
+    height: 3.76rem;
+    position: relative;
+    margin-right: .224rem;
+    .mainImg{
+        display: block;
+        width: 2.624rem;
+        height: 3.448rem;
+        position: relative;
+        img{
+          object-fit: cover;
+        }
+        .tags {
+          display: block;
+          position: absolute;
+          top: .112rem;
+          right: .096rem;
+          padding: .04rem .064rem;
+          background-color: #C72A17;
+          font-size: .112rem;
+          color: #fff;
+        }        
+      }
+      .heart_box {
+        width: .416rem;
+        height: .416rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        cursor: pointer;
+    }
+    .houseMsg_box{
+      width: 2.608rem;      
+      padding: .112rem .168rem;
+      box-sizing: border-box;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+        .house_title{
+            font-size: .16rem;
+            font-family: 'Noto';
+            color: #000;
+            margin: 0;
+            line-height: 1.3;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+          }
+          .house_location{
+            font-size: .128rem;
+            color: #383C42;
+            line-height: 2;
+            margin: 0;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            // white-space: break-spaces;
+          }
+          .housePrice_box{
+            margin-top: .2rem;
+            width: 100%;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: relative;
+            .price{
+                display: flex;
+                align-items: center;
+                .price_type{
+                  font-size: .096rem;
+                  color: #000;
+                  }
+                  .price_num{
+                    width: 1.496rem;
+                    font-size: .128rem;                  
+                    font-family: 'Noto';
+                    color: #000;
+                    margin-left: .08rem;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                  }
+              }
+          }
+          .goto_box{
+            width: .300rem;
+            height: .300rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+          }
+      }
+}
+.bg {
+    background-color: #9bc7bb;
+}
+.s_bg{
+    background-color: #EBF2F0!important;
+}
+
+@media screen and (max-width: 767px) {
+  .saleCard{
+    width: 7.4879rem;
+    height: 8.8164rem;
+    margin-right: .3623rem;
+    .mainImg{
+      width: 5.7971rem;
+      height: 7.6087rem;
+      .tags{
+        top: .3382rem;
+        right: .2899rem;
+        padding: .1208rem .1932rem;
+        font-size: .3382rem;
+        max-width: 2.9659rem;
+      }
+    }
+    .heart_box{
+      width: 1.2802rem;
+      height: 1.2802rem;
+      img{
+        width: .6763rem;
+        height: auto;
+      }
+    }
+    .houseMsg_box{
+      width: 5.9179rem;
+      padding: .2415rem .3865rem;
+      right:0.85123rem;
+      min-height: 1.94567rem;
+      .house_title{
+        font-size: .4348rem;
+      }
+      .house_location{
+        font-size: 0.2500rem;
+      }
+      .housePrice_box{
+        .price.CN{
+        display: none;        
+        }
+        .price{
+          .price_type{
+            display: none;
+          }
+          .price_num{
+            width: 4.1063rem;
+            margin: 0;
+            font-size: .3382rem;
+          }
+        }
+      }
+      .goto_box{
+        width: 0.8rem;
+        height: 0.8rem;
+        img{
+          width: .9179rem;
+          height: auto;
+        }
+      }
+    }
+  }
+}

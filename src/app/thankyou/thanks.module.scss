@@ -1,0 +1,68 @@
+.thamksPage{
+    position: relative;
+    padding: 60px 0;
+    background-color: #f8f8f8;
+    .thanksMainBox{
+        position: relative;
+        background-color: #fff;
+        padding: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        img{
+            margin-bottom: .3rem;
+        }
+        h1{
+            font-size: .4rem;
+            margin-bottom: .3rem;
+        }
+        h2{
+            font-size: .24rem;
+            margin-bottom: .22rem;
+        }
+        p{
+            font-size: .16rem;
+            margin-bottom: 0.24rem;
+        }
+        a{
+            padding: 0.064rem 0.16rem;
+            padding-right: 0.096rem;
+            background-color: #C72A17;
+            border: none;
+            display: flex;
+            align-items: center;
+            font-size: 0.112rem;
+            color: #fff;
+            letter-spacing: 0.024rem;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .thamksPage{
+        .thanksMainBox{
+            img{
+                max-width: 100%;
+                height: auto;
+            }
+            p{
+                font-size: .4565rem;
+                text-align: center;
+            }
+            h1{
+                font-size: 0.5545rem;
+            }
+            h2{
+                font-size: 0.4545rem;
+                margin-bottom: 0.4567rem;
+            }
+            a{                
+                font-size: 0.4545rem;
+                padding: .2565rem .3545rem;
+            }
+        }
+    }
+}
+

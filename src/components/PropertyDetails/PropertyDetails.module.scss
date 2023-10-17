@@ -1,0 +1,446 @@
+.details_banner{
+    position: relative;
+    background-color: #f8f8f8;
+    div{
+        .bannerWrap{
+            position: relative;
+            padding-bottom: .968rem;   
+            .bannerSlick{
+                position: relative;
+                .slideImgBox{
+                  width:100%;
+                  height: 500px;
+                  position: relative;
+                  img{
+                    object-fit: cover;
+                  }
+                }
+                .bannerSlickBtn{
+                    width: .48rem;
+                    height: .968rem;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    position: absolute;
+                    left: .4rem;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    z-index: 1;
+                    button{
+                        height: .48rem;
+                        background-color: #C72C17;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        user-select: none;
+                        border:0px;
+                        
+                      }
+                  }
+                  .control_box{
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 0.968rem;
+                    display: flex;
+                    .pagination_box {
+                        flex: 1;
+                        display: flex;
+                        align-items: center;
+                        background-color: #EBF2F0;
+                        padding: 0 0.2rem;
+                        button{
+                            width: 0.112rem;
+                            height: 0.112rem;
+                            border-radius: 50%;
+                            background-color: #fff;
+                            opacity: 1;
+                            margin: 0 0.08rem;
+                            border:0px;
+                        &.activeDot{
+                                background-color: #9bc7bb;
+                            }
+                        }
+                    }
+                  }
+              } 
+              .media_box{
+                position: absolute;
+                top: 0;
+                right: 0;
+                z-index: 2;
+                width: .48rem;
+                height: .968rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                div{                  
+                    &.fav_box{
+                        cursor: pointer;
+                        height: 0.48rem;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        &.bg{
+                            background-color: #9bc7bb;
+                        }
+                      }
+                    &.share_box{
+                      height: 0.48rem;
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
+                        &.bg{
+                            background-color: #9bc7bb;
+                        }
+                        .share_card_box{
+                            display: none;
+                            width: 295px;
+                            border-top: solid #FFC000 6px;
+                            background-color: #fff;
+                            position: absolute;
+                            top: 100%;
+                            right: 0;
+                            z-index: 1;
+                            margin-top: 1px;
+                            padding: 8px 16px;
+                            padding-bottom: 0;
+                            box-shadow: 4px 4px 17px -6px #333;
+                            height: auto;
+                            h3{
+                                font-size: 18px;                                
+                                font-family: 'Noto';
+                              }
+                            .info{
+                                display: flex;
+                                background-color: #F4F4F5;
+                                padding: 10px;
+                                margin-top: 15px;
+                                height: auto;
+                                .img_box{
+                                    width: 94px;
+                                    background-repeat: no-repeat;
+                                    background-size: cover;
+                                    background-position: center;
+                                }
+                                .msg_box{
+                                    flex: 1;
+                                    margin-left: 15px;
+                                    height: auto;
+                                    h4{
+                                        font-size: 14px;
+                                        /* font-weight: bold; */
+                                        font-family: 'Noto';
+                                        color: #333;
+                                        line-height: 1.3;
+                                        margin-bottom: 15px;
+                                        text-overflow: -o-ellipsis-lastline;
+                                        overflow: hidden;
+                                        text-overflow: ellipsis;
+                                        display: -webkit-box;
+                                        -webkit-line-clamp: 2;
+                                        line-clamp: 2;
+                                        -webkit-box-orient: vertical;
+                                      }
+                                    .bottom_msg{
+                                        font-size: 13px;
+                                        color: #999;                                        
+                                        font-family: 'Noto';
+                                        .price{
+                                            color: #333;
+                                          }
+                                          .dian{
+                                            margin: 0 8px;
+                                          }
+                                          .bed{                                            
+                                            font-family: 'DIN';
+                                          }
+                                      }
+                                }
+                            }
+                            .share_list{
+                                margin-top: 15px;
+                                margin-bottom: 0;
+                                li:nth-child(2){
+                                    display: none;
+                                }
+                                li{
+                                    border-top: solid 1px #ccc;
+                                    padding: 10px 0;
+                                    &:last-child{
+                                        border-bottom: solid 1px #ccc;
+                                      }
+                                    a{
+                                        display: block;
+                                        cursor: pointer;
+                                        span{
+                                            font-size: 14px;                                            
+                                            font-family: 'Noto';
+                                            color: #358F98;
+                                            vertical-align: middle;
+                                            margin-left: 25px;
+                                          }
+                                      }
+                                  }
+                              }
+                          }
+                          &:hover>.share_card_box{
+                            display: block;
+                          }
+                    }
+                  }
+              }   
+              
+              .baseMsg_box{
+                position: absolute;
+                right: 0;
+                bottom: 97px;
+                z-index: 1;
+                width: 5.2rem;
+                &.s_bg{
+                    background-color: #EBF2F0;
+                }
+                p{
+                    margin: 0;
+                  }
+                  .see_map{
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    transform: translateY(-100%);
+                    background-color: #fff;
+                    display: flex;
+                    .icon_box{
+                        width: .304rem;                        
+                        padding: .08rem 0;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        &.bg{
+                            background-color: #9bc7bb;
+                        }
+                      }
+                      .text_box{
+                        display: flex;
+                        align-items: center;
+                        span{
+                            font-size: .112rem;                        
+                            font-family: 'Noto';
+                            letter-spacing: 2.5px;
+                            color: #000;
+                            padding: 0 .248rem;
+                          }
+                      }
+                  }
+                  .baseMsg{
+                    padding: .08rem .416rem .16rem;
+                    .house_title_box{
+                        display: flex;
+                        align-items: center;
+                        padding: .08rem 0;
+                        .house_title{
+                            font-size: .256rem;                            
+                            font-family: 'Noto';
+                            line-height: 1.3;
+                            margin-bottom: 0;
+                          }
+                          .tags{
+                            display: block;
+                            padding: .04rem .064rem;
+                            font-size: .112rem;
+                            color: #fff;
+                            background-color: #C72A17;
+                            margin-left: .16rem;
+                          }
+                      }
+                      .house_location{
+                        width: 100%;
+                        font-size: .144rem;
+                        color: #1F1F1F;
+                      }
+                      .bedrooms{
+                        font-size: .144rem;
+                        margin-top: .12rem;
+                        padding-left: .28rem;
+                        background: url(../../../public/images/bed_3.png) no-repeat;
+                        background-size: .2rem auto;
+                        background-position: left center;
+                      }
+                  }
+                  .price_box{
+                    padding: .128rem .416rem;
+                    padding-right: .24rem;
+                    display: flex;
+                    &.bg{
+                        background-color: #9bc7bb;
+                    }
+                    .price{
+                        padding: .064rem 0;
+                        padding-right: .24rem;
+                        flex: 1;
+                        color: #fff;
+                        display: flex;
+                        align-items: center;
+                        .price_type{
+                            font-size: .128rem;
+                            margin-bottom: 0;
+                          }
+                          .price_val{
+                            font-size: .16rem;                            
+                            font-family: 'Noto';
+                            line-height: 1;
+                            margin-left: .12rem;
+                          }
+                      }
+                      .price.CN{
+                        border-left: solid 1px #fff;
+                        padding-left: .24rem;
+                        padding-right: 0;
+                      }
+                  }
+              }
+          }
+    }
+}
+
+@media screen and (max-width: 768px){
+  .details_banner{
+      div{
+      padding: 0;
+      .bannerWrap{
+        .media_box {
+          .share_box {
+            .share_card_box{
+            .share_list {
+              li:nth-child(2){
+                display: block!important;
+              }
+            }
+          }
+          }
+        }
+        padding-bottom: 0;
+        .bannerSlick{          
+          .slideImgBox{
+            height: 8.6957rem;            
+            img{
+              object-fit: cover;
+            }
+          }
+          .bannerSlickBtn{
+            display: none;
+          }
+        }
+        .media_box{
+          top: 15px;
+          right: 15px;
+          width: 1.2077rem;
+          height: 2.4396rem;
+         div{
+          &.fav_box{
+            height: 1.2077rem;
+          }
+          &.share_box{
+            height: 1.2077rem;
+          }
+         }
+        }
+        .control_box{
+          top: 6.7633rem;
+          z-index: 1;
+          width: 100%;
+          .nothing{
+            display: none;
+          }
+          .pagination_box{
+            background-color: transparent!important;
+            flex: 1;
+            display: flex;
+            justify-content: flex-start;
+            button{
+              width: .2415rem;
+              height: .2415rem;
+              margin: 0 .2415rem;
+            }
+          }
+        }
+        .baseMsg_box{
+          position: relative;
+          width: 100%;
+          margin-top: -97px;
+          bottom: 0;
+          .see_map{
+            .icon_box{
+              width: .9179rem;
+              padding: .2415rem 0;
+              img{
+                width: .4831rem;
+              }
+            }
+            .text_box{
+              span{
+                font-size: .3382rem;
+                padding: 0 .5314rem;
+              }
+            }
+          }
+          .baseMsg{
+            padding: .4831rem;
+            .house_title_box{
+              flex-wrap: wrap;
+              padding: .2415rem 0;
+              .house_title{
+                width: 100%;
+                font-size: .6763rem;
+              }
+              .tags{
+                padding: .1208rem .1932rem;
+                font-size: .3382rem;
+                margin: .3865rem 0;
+              }
+            }
+            .house_title{
+              font-size: .6763rem;
+            }
+            .house_location{             
+              font-size: .3865rem;
+            }
+            .bedrooms{
+              font-size: .3865rem;
+              margin-top: .3623rem;
+              padding-left: .8454rem;
+              background-size: .6039rem auto;
+            }
+          }
+          .price_box{
+            padding: .3865rem .4831rem;
+            .price{
+              padding-right: .3865rem;
+              display: block;
+              .price_type{
+                font-size: .3382rem;
+                margin-bottom: .5em;
+              }
+              .price_val{
+                font-size: .3865rem;
+                margin-left: 0;
+              }
+            }
+            .price.CN{
+              padding-left: .4831rem;
+              padding-right: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+  .homes{
+    .detail_content{
+      padding: 0.7729469rem 0 !important;
+    }
+  }
+  
+}
+

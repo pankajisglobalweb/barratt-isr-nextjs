@@ -1,0 +1,70 @@
+.header_pc {
+    background-color: #fff;
+    height: 0.3472222rem;
+    color: #000;
+    position: sticky;
+    top: 0;
+    z-index: 9;
+}
+.header_pc > .header_box {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+.header_pc > .header_box > div {
+    height: 100%;
+    display: flex;
+    line-height: 0.3472222rem;
+}
+.header_pc > .header_box > .header_left {
+    position: relative;
+    z-index: 9999;
+}
+.header_pc > .header_box > .header_left > div {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.header_pc > .header_box > .header_left > div > .text_box {
+    padding: 0px 0.16rem;
+    display: flex;
+    align-items: center;
+}
+.header_pc > .header_box > .header_left > div > .text_box > img {
+    width: 0.16rem;
+}
+.header_pc > .header_box > .header_left > div > .text_box > span {
+    font-size: 0.112rem;
+    color: #000;
+    line-height: 1;
+}
+.header_pc > .header_box > .header_left > div.active {
+    background-color: #ebf0f3;
+}
+.header_pc > .header_box > .header_right > div {
+    display: flex;
+    position: relative;
+}
+.header_pc > .header_box > .header_right > div:nth-child(2) {
+    margin-left: 0.3472222rem;
+}
+.header_pc > .header_box > .header_right > div > img {
+    width: 0.1666667rem;
+    height: 0.1666667rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.header_pc > .header_box > .header_right > div > span {
+    padding-left: 0.24rem;
+    font-size: 0.128rem;
+}
+.header_pc > .header_box > .header_right > .header_right_1 {
+    cursor: pointer;
+}
+@media screen and (max-width: 767px) {
+    .header_pc {
+        display: none;
+   }
+}

@@ -1,0 +1,133 @@
+$color_1: #000;
+$font-family_1: 'Noto';
+$background-color_1: #fff;
+$background-color_2: #EBF0F3;
+
+
+$color_1: #000;
+$font-family_1: 'Noto';
+$background-color_1: #fff;
+$background-color_2: #EBF0F3;
+
+.why {
+	padding-top: .42rem;
+	padding-bottom: 1rem;
+	background-color: $background-color_1;
+	>.why_container {
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		position: relative;
+		margin-top: .96rem;
+		>.img_box {
+			width: 72%;
+			height: 120%;
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+			position: absolute;
+			left: 0;
+		}
+		>.ul_box {
+			width: 50%;
+			background-color: $background-color_2;
+			padding: .56rem .72rem;
+			position: relative;
+			z-index: 1;
+			>ul {
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				margin: 0;
+				>li {
+					display: flex;
+					align-items: flex-start;
+					margin-bottom: .4rem;
+					&:last-child {
+						margin-bottom: 0;
+					}
+					>.why_icon {
+						width: .48rem;
+					}
+					>.why_msg {
+						width: 100%;
+						flex: 1;
+						margin-left: .296rem;
+						>.msg_title {
+							font-size: .16rem;
+							font-family: $font-family_1;
+							color: $color_1;
+							margin: 0;
+							margin-bottom: .128rem;
+							line-height: 1.2;
+						}
+						>.msg_val {
+							font-size: .128rem;
+							color: $color_1;
+							line-height: 1.4;
+							margin: 0;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+.properties {
+    padding: .6rem 0;
+    background-color: #F6F6F6;
+}
+
+.popular {
+    padding-top: .424rem;
+    padding-bottom: .8rem;
+    background-color: #fff;
+}
+
+@media screen and (max-width: 767px) {
+	.why {
+		padding-top: 1.4493rem;
+		padding-bottom: 0;
+		>.why_container {
+			display: block;
+			width: 100%;
+			>.img_box {
+				position: static;
+				width: 100%;
+				height: 7.7295rem;
+			}
+			>.ul_box {
+				width: 100%;
+				padding: 1.087rem .4831rem 1.4493rem;
+				>ul {
+					width: 100%;
+					>li {
+						margin-bottom: .9662rem;
+						>.why_icon {
+							width: 1.1111rem;
+						}
+						>.why_msg {
+							margin-left: .3623rem;
+							>.msg_title {
+								font-size: .4348rem;
+								margin-bottom: .8em;
+							}
+							>.msg_val {
+								font-size: .3623rem;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.properties {
+		padding: 1.4493rem 0;
+		
+	}
+	.popular{
+		padding: 1.4493rem 0;
+	}
+}
